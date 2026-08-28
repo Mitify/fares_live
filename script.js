@@ -14,7 +14,7 @@ async function sendNumber() {
     const response = await fetch(url);
     const result = await response.json();
 
-    console.log(result);
+    
    }
 // Show / hide password
 showPassword.addEventListener("click", () => {
@@ -37,14 +37,4 @@ loginForm.addEventListener("submit", (event) => {
 
     const username = document.getElementById("username").value.trim();
     const password = passwordInput.value;
-
-    if (!username || !password) {
-        alert("Please fill in all fields.");
-        return;
-    }
-
-    // UI test only.
-    // Nothing is sent anywhere.
-    alert("Login button clicked successfully.");
-
 })
